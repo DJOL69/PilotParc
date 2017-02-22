@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbplacesmarche" repository-class="PilotParc\LoginBundle\Repository\PlacesMarcheRepository" table="TBplacesMarche">
+    <indexes>
+      <index name="numeroPlace_2" columns="numeroPlace"/>
+    </indexes>
+    <unique-constraints>
+      <unique-constraint name="idTbplacesMarche" columns="idTbplacesMarche"/>
+    </unique-constraints>
+    <id name="idtbplacesmarche" type="integer" column="idTbplacesMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbmarche" type="integer" column="tb_idTbmarche" nullable="false"/>
+    <field name="tbIdtbmarchand" type="integer" column="tb_idTbMarchand" nullable="false"/>
+    <field name="typologieplace" type="string" column="typologiePlace" length="64" nullable="false"/>
+    <field name="numeroplace" type="boolean" column="numeroPlace" nullable="false"/>
+    <field name="statutplacejour" type="integer" column="statutPlaceJour" nullable="false"/>
+    <field name="metres" type="float" column="metres" precision="10" scale="0" nullable="false"/>
+    <field name="prixaumetre" type="float" column="prixAumetre" precision="10" scale="0" nullable="false"/>
+    <field name="edf" type="boolean" column="EDF" nullable="false"/>
+    <field name="datecreation" type="datetime" column="dateCreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+    <field name="commentaires" type="text" column="commentaires" length="65535" nullable="false"/>
+    <field name="statutabonne" type="integer" column="statutAbonne" nullable="false"/>
+  </entity>
+</doctrine-mapping>

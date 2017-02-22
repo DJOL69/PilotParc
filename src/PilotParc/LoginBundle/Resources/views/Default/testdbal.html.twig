@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<table border="4" width="25%">
+	<caption>tbplacesmarche</caption>
+	<tr>
+		<th>tb_idTbmarche</th><th>tb_idTbMarchand</th><th>typologiePlace</th>
+	</tr>
+	{% for tbplacesmarche in liste %}
+		<tr>
+			<td>{{ tbplacesmarche.tbIdtbmarche }}</td>
+			<td>{{ tbplacesmarche.tbIdtbmarchand }}</td>
+			<td>{{ tbplacesmarche.typologiePlace }}</td>
+		</tr>
+	{% endfor %}
+{% endblock %}

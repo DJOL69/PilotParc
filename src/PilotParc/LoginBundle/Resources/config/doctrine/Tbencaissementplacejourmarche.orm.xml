@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbencaissementplacejourmarche" table="TBencaissementPlaceJourMarche">
+    <id name="idtbencaissementplacejourmarche" type="integer" column="IdTbEncaissementPlaceJourMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbplacemarchejour" type="integer" column="tb_IdTbPlaceMarcheJour" nullable="false"/>
+    <field name="tbIdtbmarchand" type="integer" column="tb_idTbMarchand" nullable="false"/>
+    <field name="journee" type="datetime" column="journee" nullable="false"/>
+    <field name="montant" type="boolean" column="montant" nullable="false"/>
+    <field name="datecreation" type="datetime" column="dateCreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+    <field name="encaisse" type="string" column="encaisse" length="45" nullable="false"/>
+  </entity>
+</doctrine-mapping>

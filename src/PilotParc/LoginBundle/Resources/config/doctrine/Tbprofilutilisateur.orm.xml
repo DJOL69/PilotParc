@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbprofilutilisateur" table="TBProfilUtilisateur">
+    <id name="idtbprofilutilisateur" type="integer" column="idTbProfilUtilisateur">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbutilisateurs" type="integer" column="tb_IdTbUtilisateurs" nullable="false"/>
+    <field name="tbIdtbdroits" type="integer" column="tb_IdTbDroits" nullable="false"/>
+    <field name="libelleprofil" type="string" column="libelleProfil" length="64" nullable="false"/>
+    <field name="datecreation" type="datetime" column="dateCreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+  </entity>
+</doctrine-mapping>

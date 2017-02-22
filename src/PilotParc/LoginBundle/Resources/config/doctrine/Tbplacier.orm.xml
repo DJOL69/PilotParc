@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbplacier" table="TBplacier">
+    <indexes>
+      <index name="idTbPlacier" columns="idTbPlacier"/>
+    </indexes>
+    <id name="idtbplacier" type="integer" column="idTbPlacier">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbville" type="integer" column="tb_IdTBVille" nullable="false"/>
+    <field name="nom" type="string" column="nom" length="64" nullable="false"/>
+    <field name="prenom" type="string" column="prenom" length="64" nullable="false"/>
+    <field name="datecreation" type="datetime" column="dateCreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+    <field name="commentaire" type="text" column="commentaire" length="65535" nullable="false"/>
+  </entity>
+</doctrine-mapping>

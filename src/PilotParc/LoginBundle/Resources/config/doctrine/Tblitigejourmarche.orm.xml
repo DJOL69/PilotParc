@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tblitigejourmarche" table="TBlitigeJourMarche">
+    <indexes>
+      <index name="idLitige" columns="idTBlitigeJourMarche,idJourMarche"/>
+    </indexes>
+    <id name="idtblitigejourmarche" type="integer" column="idTBlitigeJourMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idjourmarche" type="integer" column="idJourMarche" nullable="false"/>
+    <field name="idplacier" type="integer" column="idPlacier" nullable="false"/>
+    <field name="datelitige" type="datetime" column="dateLitige" nullable="false"/>
+    <field name="heurelitige" type="string" column="heureLitige" length="45" nullable="true"/>
+    <field name="infoassermentation" type="boolean" column="infoAssermentation" nullable="false"/>
+    <field name="nrrTirageausort" type="boolean" column="nrr_tirageAuSort" nullable="false"/>
+    <field name="nrrPointageforain" type="boolean" column="nrr_pointageForain" nullable="false"/>
+    <field name="nrrNonpaiementplace" type="boolean" column="nrr_nonPaiementPlace" nullable="false"/>
+    <field name="nrrHorairesfinmarche" type="boolean" column="nrr_horairesFinMarche" nullable="false"/>
+    <field name="nrrRetardabonnedebutmarche" type="boolean" column="nrr_retardAbonneDebutMarche" nullable="false"/>
+    <field name="nrrNonrespectcamionauremballage" type="boolean" column="nrr_nonRespectCamionAuRemballage" nullable="false"/>
+    <field name="nrrAutre" type="text" column="nrr_autre" length="65535" nullable="true"/>
+    <field name="aalpCrachat" type="boolean" column="aalp_crachat" nullable="false"/>
+    <field name="aalpGifle" type="boolean" column="aalp_gifle" nullable="false"/>
+    <field name="aalpBousculade" type="boolean" column="aalp_bousculade" nullable="false"/>
+    <field name="aalpCoupdepoing" type="boolean" column="aalp_coupDePoing" nullable="false"/>
+    <field name="aalpCoupavecobjetcontondant" type="boolean" column="aalp_coupAvecObjetContondant" nullable="false"/>
+    <field name="aalpViolenceavecobjetcontondant" type="boolean" column="aalp_violenceAvecObjetContondant" nullable="false"/>
+    <field name="aalpArrogance" type="boolean" column="aalp_arrogance" nullable="false"/>
+    <field name="aalpDiffamation" type="boolean" column="aalp_diffamation" nullable="false"/>
+    <field name="aalpProvocation" type="boolean" column="aalp_provocation" nullable="false"/>
+    <field name="aalpDelation" type="boolean" column="aalp_delation" nullable="false"/>
+    <field name="aalpInsulte" type="boolean" column="aalp_insulte" nullable="false"/>
+    <field name="aalpTabletteendomagee" type="boolean" column="aalp_tabletteEndomagee" nullable="false"/>
+    <field name="aalpVehiculefonctionplacier" type="boolean" column="aalp_vehiculeFonctionPlacier" nullable="false"/>
+    <field name="aalpVehiculepersonnelplacier" type="boolean" column="aalp_vehiculePersonnelPlacier" nullable="false"/>
+    <field name="aalpAutre" type="text" column="aalp_autre" length="65535" nullable="true"/>
+    <field name="interSuperviseur" type="boolean" column="inter_superviseur" nullable="true"/>
+    <field name="interForcesordre" type="boolean" column="inter_forcesOrdre" nullable="true"/>
+    <field name="interAmbulancier" type="boolean" column="inter_ambulancier" nullable="true"/>
+    <field name="interAutre" type="text" column="inter_autre" length="65535" nullable="true"/>
+    <field name="vdlContremanagermarche" type="boolean" column="vdl_contreManagerMarche" nullable="true"/>
+    <field name="vdlContreforains" type="boolean" column="vdl_contreForains" nullable="true"/>
+    <field name="vdlContreforcesordre" type="boolean" column="vdl_contreForcesOrdre" nullable="true"/>
+    <field name="vdlContreclients" type="boolean" column="vdl_contreClients" nullable="true"/>
+    <field name="vdlAutre" type="text" column="vdl_autre" length="65535" nullable="true"/>
+    <field name="vdlManNomforain" type="string" column="vdl_man_nomForain" length="45" nullable="true"/>
+    <field name="vdlManAutre" type="text" column="vdl_man_autre" length="65535" nullable="true"/>
+    <field name="vdlTemNomtemoin" type="string" column="vdl_tem_nomTemoin" length="45" nullable="true"/>
+    <field name="vdlTemAutre" type="text" column="vdl_tem_autre" length="65535" nullable="true"/>
+  </entity>
+</doctrine-mapping>

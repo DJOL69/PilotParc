@@ -1,0 +1,20 @@
+pilot_parc_login_homepage:
+    path:  /accueil
+    defaults: { _controller: PilotParcLoginBundle:Default:index }
+
+pilot_parc_login_signup:
+    path:  /signup
+    defaults: { _controller: PilotParcLoginBundle:Default:signup }
+    
+pilot_parc_login_logout:
+    path:  /login
+    defaults: { _controller: PilotParcLoginBundle:Default:logout }
+
+pilot_parc_login_test:
+    path: /test
+    defaults: { _controller: PilotParcLoginBundle:Default:test }
+
+pilot_parc_login_testdbal:
+    path: /testdbal
+    defaults: { _controller: PilotParcLoginBundle:Default:test }
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbjournalplacemarche" table="TBjournalPlaceMarche">
+    <id name="idtbjournalplacemarche" type="integer" column="idTbJournalPlaceMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbplacesmarche" type="integer" column="tb_IdTbPlacesMarche" nullable="false"/>
+    <field name="tbIdtbmarche" type="integer" column="tb_IdTbMarche" nullable="false"/>
+    <field name="tbIdtbmarchand" type="integer" column="tb_IdTbMarchand" nullable="false"/>
+    <field name="numeroplace" type="boolean" column="numeroPlace" nullable="false"/>
+    <field name="presenceabonne" type="boolean" column="presenceAbonne" nullable="false"/>
+    <field name="jour" type="string" column="jour" length="24" nullable="false"/>
+    <field name="metres" type="float" column="metres" precision="10" scale="0" nullable="false"/>
+    <field name="prixaumetre" type="float" column="prixAuMetre" precision="10" scale="0" nullable="false"/>
+    <field name="typologieplace" type="string" column="typologiePlace" length="64" nullable="false"/>
+    <field name="edf" type="boolean" column="EDF" nullable="false"/>
+    <field name="encaissement" type="boolean" column="encaissement" nullable="false"/>
+    <field name="datecreation" type="datetime" column="datecreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+    <field name="commentaire" type="text" column="commentaire" length="65535" nullable="false"/>
+  </entity>
+</doctrine-mapping>

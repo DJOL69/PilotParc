@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbmarchand" table="TBmarchand">
+    <indexes>
+      <index name="TBidVille" columns="tb_IdTbVille"/>
+    </indexes>
+    <id name="idtbmarchand" type="integer" column="idTbmarchand">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbville" type="integer" column="tb_IdTbVille" nullable="false"/>
+    <field name="tbIdtbactivitemarchand" type="integer" column="tb_IdTbActiviteMarchand" nullable="false"/>
+    <field name="raisonsocialemarchand" type="string" column="raisonSocialeMarchand" length="256" nullable="false"/>
+    <field name="nommarchand" type="string" column="nomMarchand" length="64" nullable="false"/>
+    <field name="prenommarchand" type="string" column="prenomMarchand" length="32" nullable="false"/>
+    <field name="siretmarchand" type="text" column="siretMarchand" length="65535" nullable="false"/>
+    <field name="codenafmarchand" type="text" column="codeNafMarchand" length="65535" nullable="false"/>
+    <field name="metiermarchand" type="string" column="metierMarchand" length="64" nullable="false"/>
+    <field name="statutmarchand" type="boolean" column="statutMarchand" nullable="false"/>
+    <field name="statutjuridiquemarchand" type="string" column="statutJuridiqueMarchand" length="256" nullable="false"/>
+    <field name="assurancemarchand" type="string" column="assuranceMarchand" length="256" nullable="false"/>
+    <field name="dateautorisationventemarchand" type="date" column="dateAutorisationVenteMarchand" nullable="false"/>
+    <field name="dateenregistrementcommerce" type="date" column="dateEnregistrementCommerce" nullable="true"/>
+    <field name="activiteprincipalemarchand" type="string" column="activitePrincipaleMarchand" length="256" nullable="false"/>
+    <field name="activitesecondairemarchand" type="string" column="activiteSecondaireMarchand" length="256" nullable="false"/>
+    <field name="nbsalariemarchand" type="boolean" column="nbSalarieMarchand" nullable="false"/>
+    <field name="adressemarchand" type="string" column="adresseMarchand" length="256" nullable="false"/>
+    <field name="telephonemarchand" type="text" column="telephoneMarchand" length="65535" nullable="false"/>
+    <field name="mailmarchand" type="string" column="mailMarchand" length="48" nullable="false"/>
+    <field name="abonne" type="boolean" column="abonne" nullable="false"/>
+    <field name="bloque" type="string" column="bloque" length="45" nullable="true"/>
+    <field name="visible" type="string" column="visible" length="45" nullable="true"/>
+  </entity>
+</doctrine-mapping>

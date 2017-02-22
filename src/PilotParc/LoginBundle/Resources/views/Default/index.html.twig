@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Pilot Parc</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="{{asset('bundles/login/css/bootstrap.css')}}" rel="stylesheet">
+        <link href="{{asset('bundles/login/css/bootstrap-responsive.css')}}" rel="stylesheet">
+        <link href="{{asset('bundles/login/css/parsley/parsley.css')}}" rel="stylesheet">
+
+{%block stylesheets %}
+{%endblock%}
+
+    </head>
+
+        <body>
+
+{% block body %}
+        {% for flash_message in app.session.flashBag.get('notice') %}
+    <div class="flash-notice">
+        {{ flash_message }}
+    </div>
+        {% endfor %}
+{% endblock %}
+
+{%block container %}
+{%endblock%}
+
+            <script src="{{asset('bundles/login/js/jquery.js')}}"></script>
+            <script src="{{asset('bundles/login/js/bootstrap.js')}}"></script>
+            <script src="{{asset('bundles/login/js/parsley/parsley.min.js')}}"></script>
+            <script src="{{asset('bundles/login/js/parsley/parsley.extend.min.js')}}"></script>
+            <script src="{{asset('bundles/login/js/parsley/fr.js')}}"></script>
+
+{%block javascripts %}
+ {%endblock%}
+
+        </body>
+</html>

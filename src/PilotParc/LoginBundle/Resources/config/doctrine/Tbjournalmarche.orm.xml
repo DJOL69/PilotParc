@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbjournalmarche" table="TBjournalMarche">
+    <id name="idtbjournalmarche" type="integer" column="idTBJournalMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbmarche" type="integer" column="tb_IdTbMarche" nullable="false"/>
+    <field name="datejournee" type="datetime" column="dateJournee" nullable="false"/>
+    <field name="jour" type="string" column="jour" length="24" nullable="true"/>
+    <field name="nbplacesreelles" type="integer" column="nbPlacesReelles" nullable="false"/>
+    <field name="nbplacestheorique" type="integer" column="nbPlacesTheorique" nullable="false"/>
+    <field name="tbIdtbplacier" type="integer" column="tb_idTbPlacier" nullable="false"/>
+    <field name="commentaire" type="text" column="commentaire" length="65535" nullable="false"/>
+    <field name="finplacement" type="boolean" column="finPlacement" nullable="true"/>
+    <field name="finencaissement" type="boolean" column="finEncaissement" nullable="true"/>
+    <field name="datecreation" type="datetime" column="dateCreation" nullable="false"/>
+    <field name="datemaj" type="datetime" column="dateMaj" nullable="false"/>
+  </entity>
+</doctrine-mapping>

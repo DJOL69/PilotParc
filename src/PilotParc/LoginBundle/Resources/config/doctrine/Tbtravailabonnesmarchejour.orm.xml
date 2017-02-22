@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbtravailabonnesmarchejour" table="TBtravailAbonnesMarcheJour">
+    <id name="idtravailabonnesmarchejour" type="integer" column="idTravailAbonnesMarcheJour">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="tbIdtbactivitemarchand" type="integer" column="tb_IdTbactiviteMarchand" nullable="false"/>
+    <field name="idtbmarchand" type="integer" column="idTbMarchand" nullable="false"/>
+    <field name="tbIdtbville" type="integer" column="tb_IdTbVille" nullable="false"/>
+    <field name="raisonsocialemarchand" type="string" column="raisonSocialeMarchand" length="256" nullable="false"/>
+    <field name="idplacemarche" type="integer" column="idPlaceMarche" nullable="false"/>
+    <field name="jour" type="string" column="jour" length="45" nullable="true"/>
+    <field name="numeroplace" type="boolean" column="numeroPlace" nullable="false"/>
+    <field name="tbIdtbmarchand" type="integer" column="tb_idTbMarchand" nullable="false"/>
+  </entity>
+</doctrine-mapping>

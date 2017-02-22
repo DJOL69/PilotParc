@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="PilotParc\LoginBundle\Entity\Tbabonnesjourmarche" table="TBabonnesJourMarche">
+    <id name="idtbabonnesjourmarche" type="integer" column="idTBabonnesJourMarche">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idplacemarche" type="integer" column="idPlaceMarche" nullable="false"/>
+    <field name="idmarche" type="integer" column="idMarche" nullable="false"/>
+    <field name="idmarchand" type="integer" column="idMarchand" nullable="false"/>
+    <field name="jour" type="string" column="jour" length="45" nullable="true"/>
+  </entity>
+</doctrine-mapping>

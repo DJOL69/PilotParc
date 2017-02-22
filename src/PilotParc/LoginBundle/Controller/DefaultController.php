@@ -75,7 +75,7 @@ class DefaultController extends Controller {
     public function testAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $placesmarche = $em->getRepository('PilotParcLoginBundle:Tbplacesmarche')->test();
+        $placesmarche = $em->getRepository('PilotParcLoginBundle:Tbplacesmarche')->testsql();
 
        return $this->render('PilotParcLoginBundle:Default:testdbal.html.twig', array('liste'=>$placesmarche));
     }

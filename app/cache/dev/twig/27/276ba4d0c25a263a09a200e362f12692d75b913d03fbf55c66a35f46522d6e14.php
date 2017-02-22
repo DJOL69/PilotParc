@@ -21,20 +21,20 @@ class __TwigTemplate_c3b1b2ac56c49e8d417c83f9d30eb79d1084326a5c41c87fb7c6c71fe61
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_de068297c8ff4afe53ba569a48ee881bbac3b2b86302c3e8c4a69427de30ffc7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_de068297c8ff4afe53ba569a48ee881bbac3b2b86302c3e8c4a69427de30ffc7->enter($__internal_de068297c8ff4afe53ba569a48ee881bbac3b2b86302c3e8c4a69427de30ffc7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PilotParcLoginBundle:Default:testdbal.html.twig"));
+        $__internal_8d41f87edf1e1b321793ac763daec8a9e2d65a4c3844bb243d8d7bab45ea86a4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_8d41f87edf1e1b321793ac763daec8a9e2d65a4c3844bb243d8d7bab45ea86a4->enter($__internal_8d41f87edf1e1b321793ac763daec8a9e2d65a4c3844bb243d8d7bab45ea86a4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "PilotParcLoginBundle:Default:testdbal.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_de068297c8ff4afe53ba569a48ee881bbac3b2b86302c3e8c4a69427de30ffc7->leave($__internal_de068297c8ff4afe53ba569a48ee881bbac3b2b86302c3e8c4a69427de30ffc7_prof);
+        $__internal_8d41f87edf1e1b321793ac763daec8a9e2d65a4c3844bb243d8d7bab45ea86a4->leave($__internal_8d41f87edf1e1b321793ac763daec8a9e2d65a4c3844bb243d8d7bab45ea86a4_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_cc28b55da8f3c71521253fb7197ef83e9f7a0756eda8ad04f701e86d12b000f2 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_cc28b55da8f3c71521253fb7197ef83e9f7a0756eda8ad04f701e86d12b000f2->enter($__internal_cc28b55da8f3c71521253fb7197ef83e9f7a0756eda8ad04f701e86d12b000f2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_599571edf53ccbecce8afca453e8e14e4ebc1a343d6900f31a58832fa22c6b6a = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_599571edf53ccbecce8afca453e8e14e4ebc1a343d6900f31a58832fa22c6b6a->enter($__internal_599571edf53ccbecce8afca453e8e14e4ebc1a343d6900f31a58832fa22c6b6a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -47,29 +47,29 @@ class __TwigTemplate_c3b1b2ac56c49e8d417c83f9d30eb79d1084326a5c41c87fb7c6c71fe61
         // line 10
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["liste"]) ? $context["liste"] : $this->getContext($context, "liste")));
-        foreach ($context['_seq'] as $context["_key"] => $context["tbplacesmarche"]) {
+        foreach ($context['_seq'] as $context["_key"] => $context["tbutilisateurs"]) {
             // line 11
             echo "\t\t<tr>
 \t\t\t<td>";
             // line 12
-            echo twig_escape_filter($this->env, $this->getAttribute($context["tbplacesmarche"], "tbIdtbmarche", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["tbutilisateurs"], "nom", array()), "html", null, true);
             echo "</td>
 \t\t\t<td>";
             // line 13
-            echo twig_escape_filter($this->env, $this->getAttribute($context["tbplacesmarche"], "tbIdtbmarchand", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["tbutilisateurs"], "prenom", array()), "html", null, true);
             echo "</td>
 \t\t\t<td>";
             // line 14
-            echo twig_escape_filter($this->env, $this->getAttribute($context["tbplacesmarche"], "typologiePlace", array()), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["tbutilisateurs"], "email", array()), "html", null, true);
             echo "</td>
 \t\t</tr>
 \t";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tbplacesmarche'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tbutilisateurs'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         
-        $__internal_cc28b55da8f3c71521253fb7197ef83e9f7a0756eda8ad04f701e86d12b000f2->leave($__internal_cc28b55da8f3c71521253fb7197ef83e9f7a0756eda8ad04f701e86d12b000f2_prof);
+        $__internal_599571edf53ccbecce8afca453e8e14e4ebc1a343d6900f31a58832fa22c6b6a->leave($__internal_599571edf53ccbecce8afca453e8e14e4ebc1a343d6900f31a58832fa22c6b6a_prof);
 
     }
 
@@ -107,11 +107,11 @@ class __TwigTemplate_c3b1b2ac56c49e8d417c83f9d30eb79d1084326a5c41c87fb7c6c71fe61
 \t<tr>
 \t\t<th>tb_idTbmarche</th><th>tb_idTbMarchand</th><th>typologiePlace</th>
 \t</tr>
-\t{% for tbplacesmarche in liste %}
+\t{% for tbutilisateurs in liste %}
 \t\t<tr>
-\t\t\t<td>{{ tbplacesmarche.tbIdtbmarche }}</td>
-\t\t\t<td>{{ tbplacesmarche.tbIdtbmarchand }}</td>
-\t\t\t<td>{{ tbplacesmarche.typologiePlace }}</td>
+\t\t\t<td>{{ tbutilisateurs.nom }}</td>
+\t\t\t<td>{{ tbutilisateurs.prenom }}</td>
+\t\t\t<td>{{ tbutilisateurs.email }}</td>
 \t\t</tr>
 \t{% endfor %}
 {% endblock %}

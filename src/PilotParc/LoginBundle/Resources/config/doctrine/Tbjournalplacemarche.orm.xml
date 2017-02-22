@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="PilotParc\LoginBundle\Entity\Tbjournalplacemarche" table="TBjournalPlaceMarche">
+  <entity name="PilotParc\LoginBundle\Entity\Tbjournalplacemarche" repository-class="PilotParc\LoginBundle\Repository\JournalPlaceMarcheRepository" table="TBjournalPlaceMarche">
     <id name="idtbjournalplacemarche" type="integer" column="idTbJournalPlaceMarche">
       <generator strategy="IDENTITY"/>
     </id>

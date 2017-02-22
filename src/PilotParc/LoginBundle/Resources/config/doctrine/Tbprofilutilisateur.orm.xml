@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity name="PilotParc\LoginBundle\Entity\Tbprofilutilisateur" table="TBProfilUtilisateur">
+  <entity name="PilotParc\LoginBundle\Entity\Tbprofilutilisateur" repository-class="PilotParc\LoginBundle\Repository\ProfilUtilisateurRepository" table="TBProfilUtilisateur">
     <id name="idtbprofilutilisateur" type="integer" column="idTbProfilUtilisateur">
       <generator strategy="IDENTITY"/>
     </id>

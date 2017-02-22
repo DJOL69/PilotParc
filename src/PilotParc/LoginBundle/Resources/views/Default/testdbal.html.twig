@@ -7,11 +7,11 @@
 	<tr>
 		<th>tb_idTbmarche</th><th>tb_idTbMarchand</th><th>typologiePlace</th>
 	</tr>
-	{% for tbplacesmarche in liste %}
+	{% for tbutilisateurs in liste %}
 		<tr>
-			<td>{{ tbplacesmarche.tbIdtbmarche }}</td>
-			<td>{{ tbplacesmarche.tbIdtbmarchand }}</td>
-			<td>{{ tbplacesmarche.typologiePlace }}</td>
+			<td>{{ tbutilisateurs.nom }}</td>
+			<td>{{ tbutilisateurs.prenom }}</td>
+			<td>{{ tbutilisateurs.email }}</td>
 		</tr>
 	{% endfor %}
 {% endblock %}

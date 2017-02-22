@@ -22,4 +22,14 @@ class PlacesMarcheRepository extends EntityRepository
         
        
     }
+
+    public function testsql()
+    {
+        $rawSql = "SELECT * FROM TButilisateurs WHERE prenom = 'Jimmy' ";
+        $stmt = $this->getEntityManager()->getConnection()->prepare($rawSql);
+        $stmt->execute([]);
+
+        return $stmt->fetchAll();
+
+    }
 }
